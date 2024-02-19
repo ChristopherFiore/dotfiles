@@ -1,6 +1,7 @@
 local lsp = require('lspconfig')
 local servers = { 
-    'clangd' 
+    'clangd',
+    'pyright'
 }
 
 for _, server in ipairs(servers) do
