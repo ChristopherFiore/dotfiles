@@ -13,9 +13,13 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     "ellisonleao/gruvbox.nvim",
+    "Mofiqul/dracula.nvim",
 
     -- Transparent Background
     "xiyaowong/transparent.nvim",
+
+    -- Tree-Sitter
+    "nvim-treesitter/nvim-treesitter",
 
     -- File Tree
     {

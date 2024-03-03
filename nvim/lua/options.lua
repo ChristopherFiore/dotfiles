@@ -1,7 +1,7 @@
 local opt = vim.opt
 
 -- indentation and line
-opt.relativenumber = true
+opt.number = true
 opt.smartindent = true
 opt.expandtab = true
 opt.autoindent = true
@@ -22,4 +22,4 @@ opt.mouse = "r"
 opt.path = opt.path + "**"
 
 -- ColourScheme
-vim.cmd[[colorscheme gruvbox]]
+vim.cmd[[colorscheme dracula]]

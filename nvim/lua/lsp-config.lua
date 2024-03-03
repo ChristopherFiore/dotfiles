@@ -1,6 +1,7 @@
 local lsp = require('lspconfig')
 local servers = { 
     'clangd',
+    'hls',
     'pyright'
 }
 
