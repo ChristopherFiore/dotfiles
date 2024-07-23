@@ -1,0 +1,12 @@
+[font]
+size = 14.0
+
+[window]
+startup_mode = "Fullscreen"
+dynamic_padding = true
+opacity = 0.99 
+decorations = "None"
+
+[window.padding]
+x = 4
+y = 4
