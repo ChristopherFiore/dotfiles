@@ -12,7 +12,7 @@ opt.signcolumn = "number"
 opt.wrap = false
 
 -- Appearance
-opt.colorcolumn = "120"
+opt.colorcolumn = "80"
 vim.cmd[[TransparentEnable]]
 
 -- Behaviour

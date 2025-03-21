@@ -12,14 +12,27 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+    -- Themes
     "ellisonleao/gruvbox.nvim",
     "Mofiqul/dracula.nvim",
+
+    -- nvim-web-devicons
+    "nvim-tree/nvim-web-devicons",
 
     -- Transparent Background
     "xiyaowong/transparent.nvim",
 
     -- Tree-Sitter
     "nvim-treesitter/nvim-treesitter",
+
+    -- Completion
+    "hrsh7th/nvim-cmp",
+    "hrsh7th/cmp-nvim-lsp",
+    "L3MON4D3/LuaSnip",                 -- Snippet engine
+    "saadparwaiz1/cmp_luasnip",          -- Snippet completion
+    "hrsh7th/cmp-buffer",                -- Buffer completions
+    "hrsh7th/cmp-path",                  -- Path completions
+    "hrsh7th/cmp-cmdline",               -- Command-line completions
 
     -- File Tree
     {

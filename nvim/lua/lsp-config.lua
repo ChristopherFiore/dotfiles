@@ -1,12 +1,19 @@
 local lsp = require('lspconfig')
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 local servers = { 
     'clangd',
     'hls',
-    'pyright'
+    'pyright',
+    'html',
+    'ts_ls',
+    'gopls'
 }
 
 for _, server in ipairs(servers) do
-    lsp[server].setup {}
+    lsp[server].setup {
+        capabilities = capabilities,
+    }
 end
 
 -- Global mappings.
