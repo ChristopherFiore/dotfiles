@@ -21,6 +21,9 @@ local plugins = {
 
     -- Transparent Background
     "xiyaowong/transparent.nvim",
+       
+    -- Icons for autocomplete
+    "onsails/lspkind.nvim",    
 
     -- Tree-Sitter
     "nvim-treesitter/nvim-treesitter",

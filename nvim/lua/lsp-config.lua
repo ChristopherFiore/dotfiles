@@ -6,7 +6,7 @@ local servers = {
     'hls',
     'pyright',
     'html',
-    'ts_ls',
+    'tsserver',
     'gopls'
 }
 
@@ -51,5 +51,27 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<space>f', function()
       vim.lsp.buf.format { async = true }
     end, opts)
+    
+    -- signature_help
+    vim.api.nvim_create_autocmd("CursorHoldI", {
+        callback = function()
+            vim.lsp.buf.signature_help()
+        end
+    })
+
+    -- peek-definition
+    vim.keymap.set('n', '<space>pd', function()
+        vim.lsp.buf.definition { reuse_win = true }
+    end, { desc = "Peek definition" })
+
   end,
 })
+
+
+
+
+
+
+
+
+

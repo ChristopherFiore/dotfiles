@@ -25,3 +25,10 @@ api.nvim_set_keymap('n', '<leader>fh', ':Telescope help_tags<CR>', { noremap = t
 -- Tree
 api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true })
 
+-- Auto-closing brackets and quotes
+api.nvim_set_keymap('i', '(', '()<Left>', { noremap = true })
+api.nvim_set_keymap('i', '[', '[]<Left>', { noremap = true })
+api.nvim_set_keymap('i', '{', '{}<Left>', { noremap = true })
+api.nvim_set_keymap('i', '"', '""<Left>', { noremap = true })
+api.nvim_set_keymap('i', "'", "''<Left>", { noremap = true })
+api.nvim_set_keymap('i', '`', '``<Left>', { noremap = true })
