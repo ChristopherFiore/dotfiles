@@ -6,7 +6,7 @@ local servers = {
     'hls',
     'pyright',
     'html',
-    'tsserver',
+    'ts_ls',
     'gopls'
 }
 

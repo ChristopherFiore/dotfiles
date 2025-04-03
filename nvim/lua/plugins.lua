@@ -21,6 +21,24 @@ local plugins = {
 
     -- Transparent Background
     "xiyaowong/transparent.nvim",
+
+    -- BufferLine
+    {
+        "akinsho/bufferline.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" }, -- For icons
+        config = function()
+            require("bufferline").setup({
+                options = {
+                    separator_style = "slant", -- Rounded or "slant", "thick", "thin"
+                    diagnostics = "nvim_lsp", -- Show LSP diagnostics in bufferline
+                    offsets = { { filetype = "NvimTree", text = "File Explorer", padding = 1 } }, -- Adjust if using NvimTree
+                    show_buffer_close_icons = false,
+                    show_close_icon = false,
+                    always_show_bufferline = true,
+                }
+            })
+        end
+    },
        
     -- Icons for autocomplete
     "onsails/lspkind.nvim",    

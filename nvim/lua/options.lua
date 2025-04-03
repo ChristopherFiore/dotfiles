@@ -2,6 +2,7 @@ local opt = vim.opt
 
 -- indentation and line
 opt.number = true
+opt.relativenumber = true
 opt.smartindent = true
 opt.expandtab = true
 opt.autoindent = true
