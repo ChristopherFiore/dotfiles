@@ -32,10 +32,3 @@ api.nvim_set_keymap('n', '<S-k>', ':BufferLineCycleNext<CR>',
     { noremap = true, silent = true }) 
 api.nvim_set_keymap('n', '<S-q>', ':bdelete<CR>', { noremap = true, silent = true })
 
--- Auto-closing brackets and quotes
-api.nvim_set_keymap('i', '(', '()<Left>', { noremap = true })
-api.nvim_set_keymap('i', '[', '[]<Left>', { noremap = true })
-api.nvim_set_keymap('i', '{', '{}<Left>', { noremap = true })
-api.nvim_set_keymap('i', '"', '""<Left>', { noremap = true })
-api.nvim_set_keymap('i', "'", "''<Left>", { noremap = true })
-api.nvim_set_keymap('i', '`', '``<Left>', { noremap = true })

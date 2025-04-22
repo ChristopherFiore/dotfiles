@@ -7,7 +7,8 @@ local servers = {
     'pyright',
     'html',
     'ts_ls',
-    'gopls'
+    'gopls',
+    'omnisharp'
 }
 
 for _, server in ipairs(servers) do

@@ -15,6 +15,7 @@ local plugins = {
     -- Themes
     "ellisonleao/gruvbox.nvim",
     "Mofiqul/dracula.nvim",
+    "folke/tokyonight.nvim",
 
     -- nvim-web-devicons
     "nvim-tree/nvim-web-devicons",
@@ -38,6 +39,15 @@ local plugins = {
                 }
             })
         end
+    },
+
+    -- Auto-Pairs
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+        -- use opts = {} for passing setup options
+        -- this is equivalent to setup({}) function
     },
        
     -- Icons for autocomplete

@@ -24,4 +24,4 @@ opt.mouse = "r"
 opt.path = opt.path + "**"
 
 -- ColourScheme
-vim.cmd[[colorscheme dracula]]
+vim.cmd[[colorscheme tokyonight-storm]]
